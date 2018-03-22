@@ -21,7 +21,7 @@ class Item(object):
 
 class Recommender(object):
     """
-    A Baseline Recommender.
+    A Baseline Recommender with excluded items already visited by the user.
     It allows to add a new interaction into the network.
     Recommendations candidates are obtained as all items on the path of the length 3 from the user.
 
