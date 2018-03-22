@@ -61,7 +61,7 @@ class Recommender(object):
         neighbour_candidates = defaultdict(int)
         for item_id in user_profile:
             for user_id in self.items[item_id].item_profile:
-                neighbour_candidates[user_id] += 1
+                neighbour_candidates[user_id] += 1 / self.users[user_id].norm
 
         return sorted(neighbour_candidates.keys(), key=lambda user_id: neighbour_candidates[user_id], reverse=True)[:1000]
 

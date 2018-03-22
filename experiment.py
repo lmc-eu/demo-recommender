@@ -2,9 +2,9 @@ import json
 import logging
 
 from recommender.utils import split_dataset, evaluate, check_dataset
-# from recommender.baseline_recommender import Recommender
+from recommender.baseline_recommender import Recommender
 # from recommender.recommender_exluded_history import Recommender
-from recommender.normalized_recommender import Recommender
+# from recommender.normalized_recommender import Recommender
 # from recommender.user_neighbours_recommender import Recommender
 
 logging.basicConfig(level=logging.INFO, format='%(asctime)s %(levelname)-8s %(message)s')

@@ -16,5 +16,6 @@ Model         | Performance | Improvement
 Baseline      | 0.91        |
 No history    | 2.34        | +257%
 Normalization | 2.61        | +287%
-Neighbours    | 
+Neighbours    | 0.41        | -45%
+
 ```
